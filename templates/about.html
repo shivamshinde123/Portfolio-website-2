@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block page_title %}About me{% endblock %}
+
+{% block css_page_link %}
+
+<link rel="stylesheet" href="static/about.css">
+
+{% endblock %}
+
+
+{% block content %}
+
+<section id="Introduction">
+    <div class="intro-container">
+        <div class="intro-content">
+            <h1>Shivam Shinde</h1>
+            <p>I'm aspiring data scientist who loves mathematics and programming.</p>
+        </div>
+        <img src="static/shivam1.jpg" alt="img">
+    </div>
+</section>
+
+<section id="journey">
+    <div class="journey-container">
+        <h2>My Journey</h2>
+        <div class="journey-content">
+            <div class="journey-photos">
+                <img src="static/standing_photo.jpg" alt="img">
+                <!-- <img src="static/graduation_photo.jpg" alt="img"> -->
+            </div>
+            <div class="journey-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam magnam dolor quod consectetur
+                    recusandae velit perferendis labore est iste beatae? Laudantium beatae adipisci, mollitia neque ut
+                    doloribus aliquam repellendus. Alias, illo amet. Ipsam corporis sunt inventore commodi mollitia
+                    dolorem voluptate, laudantium illum aperiam maiores corrupti molestias vero, iure quo deleniti!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="about-me-container">
+        <h2>About me</h2>
+        <div class="about-me-content">
+            <div class="about-me-text">
+                <h3>Who am I?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt cum rerum deleniti amet, alias
+                    enim magnam totam commodi voluptatum impedit autem nostrum sequi aut minus nisi reiciendis natus
+                    itaque!
+                    Aliquam, commodi. Laudantium, minima dicta repudiandae autem officia sunt eos fuga ipsam expedita
+                    architecto, aspernatur ullam delectus nam voluptates eligendi!</p>
+            </div>
+            <div class="about-me-skills">
+                <h3>Skills & expertises</h3>
+                <div class="skill-list">
+                    <h4>SQL</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="SQL"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Python Programming Language</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="python-lang"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Web Scrapping using Python</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="web-scrapping"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Data Analysis using NumPy and Pandas</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="data-analysis"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Data Visualization using Matplotlib and Seaborn</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="data-viz"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Flask Python Framework</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="flask"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Git</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="git"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Tableau</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="Tableau"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>HTML</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="html"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Cascading Style Sheets (CSS)</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="css"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>statistics</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="stats"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Machine Learning</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="ml"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Data Version Control (DVC)</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="dvc"></div>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <h4>Time Series Analysis</h4>
+                    <div class="progress">
+                        <div class="progress-fill" id="time-series"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-and-experience">
+    <div class="education">
+        <h3>Education</h3>
+        <div class="college">
+            <h4>Mechanical Engineering</h4>
+            <p>Sardar Patel College of Engineering, Mumbai / 2017-2021</p>
+        </div>
+        <div class="high-school">
+            <h4>Science Stream</h4>
+            <p>Dayanand Science College, Latur / 2015-2017</p>
+        </div>
+        <div class="school">
+            <h4>School</h4>
+            <p>Keshavraj School, Latur / 2005-2015</p>
+        </div>
+    </div>
+    <div class="experience-and-certifications">
+        <div class="experience">
+            <h3>Experience</h3>
+            <div class="job-1">
+                <h4>Infosys Ltd.</h4>
+                <p>System Engineer / 2021 - present</p>
+            </div>
+        </div>
+        <div class="certifications">
+            <h3>Certifications</h3>
+            <p>Microsoft Certified: Azure Fundamentals</p>
+            <p>Python programming language - udemy</p>
+            <p>Python flask framework - udemy</p>
+            <p>PostgreSQL - udemy </p>
+            <p>Tableau - iNeuron</p>
+            <p>Microsoft Excel - udemy</p>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

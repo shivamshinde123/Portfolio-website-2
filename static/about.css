@@ -1,0 +1,333 @@
+@import url('static/base.css');
+
+
+#Introduction{
+    background-color: #e6f3f1;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+  
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.intro-content h1 {
+    color: #ec2e57;
+    font-size: 5rem;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.intro-content p {
+    font-weight: bold;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.journey-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+
+.journey-container h2 {
+    color: #ec2e57;
+    font-size: 4rem;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.journey-content {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.journey-photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-photos img {
+    width: 25rem;
+    margin: 0 2rem 2rem 0;
+}
+
+.journey-text p {
+    color: #2e3755;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 50rem;
+}
+
+#skills{
+    background-color: #e6f3f1;
+}
+
+.about-me-container {
+    padding: 5rem;
+}
+
+.about-me-container h2 {
+    color: #ec2e57;
+    font-size: 4rem;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+.about-me-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-content: center;
+
+}
+
+.about-me-text {
+    color: #2e3755;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-me-skills h3 {
+    color: #2e3755;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: "Proxima Nova", sans-serif;
+    text-align: center;
+}
+
+#skills {
+    padding: 1rem;
+    color: whitesmoke;
+}
+
+#skills h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* border:1px solid red; */
+}
+
+.skill-list h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color: #2e3755
+}
+
+.progress {
+    width: 60%;
+    height: 0.5rem;
+    background-color: #9cbab4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#SQL {
+    width: 75%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#python-lang {
+    width: 75%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#web-scrapping {
+    width: 70%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#data-analysis {
+    width: 70%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#data-viz {
+    width: 70%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#flask {
+    width: 60%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#git {
+    width: 60%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#Tableau {
+    width: 55%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#html {
+    width: 80%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#css {
+    width: 70%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#Bootstrap {
+    width: 75%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#stats {
+    width: 60%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#ml {
+    width: 65%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#dvc {
+    width: 70%;
+    height: 100%;
+    background-color: #009579;
+}
+
+#time-series {
+    width: 65%;
+    height: 100%;
+    background-color: #009579;
+}
+
+.education-and-experience {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.education-and-experience h3 {
+    color: #2e3755;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: "Proxima Nova", sans-serif;
+    text-align: center;
+}
+
+.education {
+    padding: 3rem;
+}
+
+.education div {
+    margin: 1.5rem 0;
+}
+
+.experience-and-certifications {
+    padding: 3rem;
+    border-left: 1px solid #2e3755;
+}
+
+.experience-and-certifications div {
+    margin: 1.5rem 0;
+}
+
+.certifications p {
+    margin: 1rem 0;
+}
+
+
+
+@media (max-width:1000px) {
+
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .intro-content {
+        margin-bottom: 1rem;
+    }
+
+    .intro-content h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .intro-content p {
+        text-align: center;
+    }
+
+    .journey-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .journey-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .journey-photos {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .journey-photos img {
+        text-align: center;
+    }
+
+    .journey-text p {
+        text-align: center;
+    }
+
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-and-experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-and-certifications{
+        border:none;
+    }
+
+
+
+
+}

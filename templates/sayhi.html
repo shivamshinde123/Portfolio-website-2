@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Say Hi!{% endblock %}
+
+
+{% block css_page_link %}
+
+<link rel="stylesheet" href="static\sayhi.css">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="mini-container1">
+        <h1>Let's Connect</h1>
+        <p>I'd love to hear from you; whether you want to collaborate on a project, or simply just want to say hello.
+        </p>
+        <p>You can fill out the form right here or get in touch with me at <a href="mailto:shivamshinde92722@gmail.com"
+                target="_top">shivamshinde92722@gmail.com</a>.</p>
+    </div>
+    <div class="mini-container2">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.name.label(class="form-elements-label") }} 
+            {{ form.name(class="form-elements") }}
+            {{ form.email.label(class="form-elements-label") }} 
+            {{ form.email(class="form-elements") }}
+            {{ form.message.label(class="form-elements-label") }} 
+            {{ form.message(class="form-elements mess-element") }}
+            {{ form.submit(class="form-elements submit-btn") }}
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block js_script %}
+
+
+{% endblock %}

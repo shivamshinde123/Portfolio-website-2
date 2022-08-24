@@ -1,0 +1,102 @@
+@import url('static/base.css');
+
+body{
+    background:url('https://images.unsplash.com/photo-1540760938999-077b8231d890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    width:100vw;
+    z-index:-234;
+    top:0;
+    left:0;
+    background-color:#c4c4c2;
+}
+
+.container{
+    /* border:1px solid green; */
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding:5rem;
+}
+
+.mini-container1{
+    padding:2rem;
+    max-width: 31rem;
+}
+
+.mini-container1 h1{
+    font-size: 4.0625rem;
+    font-weight: 700;
+    color: #ec2e57;
+    line-height: 1;
+    margin:0.7rem 0;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.mini-container1 p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Proxima Nova", sans-serif;
+    margin:1rem 0;
+    line-height: 1.5;
+}
+
+.mini-container1 p a{
+    color:#ec2e57;
+    text-decoration:underline;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+
+form{
+    border:1px solid white;
+    border-radius:0.5rem;
+    padding:5rem;
+    display:flex;
+    flex-direction: column;
+    /* background-color: white; */
+    /* box-shadow:0.2rem 0.2rem 0.2rem 0.2rem grey; */
+}
+
+.form-elements{
+    margin:1rem 0;
+    height:2rem;
+    border:1px solid black;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    max-width:20rem;
+    padding:0.3rem;
+}
+
+.mess-element{
+    height:5rem;
+    line-height:1rem;
+}
+
+.form-elements-label{
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.submit-btn{
+    background-color:#ec2e57;
+    color:black;
+    border:0.2rem;
+    border:1px solid black;
+
+}
+
+
+
+@media (max-width:1000px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
+    }
+
+    .mini-container1{
+        padding:3rem;
+    }
+}

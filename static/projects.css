@@ -1,0 +1,75 @@
+@import url('static/base.css');
+
+h2{
+    color: #ec2e57;
+    font-size: 3rem;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding:2rem 0 0 2rem;
+}
+
+.ML-container, .web-dev-container, .jupyter-snippets-container{
+    background-color: #e6f3f1;
+}
+
+
+.cards{
+    margin:0 auto 1.5rem auto;
+    max-width:80rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-auto-rows:auto;
+    gap:1.5rem;
+    padding:2rem 0;
+    
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: #fafafa;
+}
+
+.card img{
+    width:100%;
+    height:15rem;
+    object-fit:cover;
+    display:block;
+    border-radius:0.2rem;
+    transition:200ms transform ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.02);
+}
+
+.card-content{
+    line-height: 1.5;
+    font-size:0.9em;
+    padding:1rem;
+    background:#fafafa;
+    display:flex;
+    flex-direction:column;
+    align-items:space-between;
+}
+
+.card-content p{
+    margin:1rem 0;
+}
+
+.card-content button {
+    background-color:#ec2e57;
+    border:1px solid white;
+    border-radius: 0.3rem;
+    padding:0.5rem;
+}
+
+.card-content button a{
+    color:white;
+    text-decoration:none;
+}
+
+.card-content button:hover{
+    border:1px solid black;
+}

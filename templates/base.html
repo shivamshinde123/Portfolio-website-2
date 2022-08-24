@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block page_title %}
+        
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="static/base.css">
+    {% block css_page_link %}
+
+    {% endblock %}
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="brand-name-and-btn">
+                <div class="brand-name">
+                    <a href="{{url_for('index')}}">Shivam Shinde</a>
+                </div>
+                <div class="toggle-btn">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="nav-items">
+                        <a class="nav-links active" href="{{ url_for('index') }}" class="nav-links">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" href="{{ url_for('projects') }}" class="nav-links">Projects</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" href="{{ url_for('about') }}" class="nav-links">About</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" href="{{ url_for('sayhi') }}" class="nav-links">Say Hi!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+
+
+    {% endblock %}
+
+
+    <footer id="footer">
+        <span class="footer-email">
+            <a id="mail" href="mailto:ShivamDattatrayShinde@gmail.com" target="_top">Send me an email</a>
+        </span>
+        <ul class="social-list">
+            <li>
+                <a href="https://twitter.com/ShivamS64852411" target="_blank" title="Follow me on Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shivamds92722/" target="_blank" title="Connect with me on LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/me_shivam__/" target="_blank" title="Follow me on Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="static\base.js"></script>
+    {% block js_script %}
+
+
+    {% endblock %}
+
+</body>
+
+</html>

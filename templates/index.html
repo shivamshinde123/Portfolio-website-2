@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block page_title %}Home{% endblock %}
+
+
+{% block css_page_link %}
+
+<link rel="stylesheet" href="static/index.css">
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="profile-picture">
+        <img src="static/shivam.jpg" alt="profile-picture">
+    </div>
+    <div class="intro">
+        <h2>Hi I'm Shivam.</h2>
+        <p>A tenacious, passionate data science aspirant
+            who loves turning the raw data into impactful insights. </p>
+        <div class="to-about-page">
+            <a href="{{ 'about' }}">Curious to know more?</a>
+        </div>
+    </div>
+</div>
+
+{% block js_script %}
+
+{% endblock %}
+
+{% endblock %}

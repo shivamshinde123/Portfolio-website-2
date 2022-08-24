@@ -1,0 +1,204 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* ***************************CSS FOR HEADER */
+
+header {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; */
+    padding: 1.3rem;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name-and-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.brand-name {
+    margin-right: 5rem;
+}
+
+.brand-name a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.2rem;
+}
+
+.brand-name a:hover {
+    color: #ec2e57;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0 2rem;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #1aabac;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links:hover {
+    color: #ec2e57;
+    border-bottom: solid 3px #ec2e57;
+}
+
+.toggle-btn i {
+    color: #1aabac;
+    font-size: 1.25rem;
+    display: none;
+}
+
+/* **************************CSS FOR FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 100%;
+}
+
+.footer-email {
+    padding-right: 5rem;
+    border-right: 1px solid black;
+}
+
+.footer-email a {
+    text-decoration: none;
+    color: #1aabac;
+    border-bottom: 1px solid #1aabac;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-email a:hover{
+    color: #ec2e57;
+    border-bottom: solid 3px #ec2e57;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list li {
+    list-style: none;
+    margin: 0 0.7rem;
+}
+
+.social-list li a {
+    text-decoration: none;
+    color: #1aabac;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media (max-width:850px) {
+
+    header{
+        max-width: 1000px;
+    }
+
+    .toggle-btn i {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .nav {
+        display: none;
+        /* width: 100%; */
+    }
+
+    .nav ul {
+        /* width: 100%; */
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav ul li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    footer{
+        flex-direction: column;
+        max-width: 1000px;
+    }
+    
+    .footer-email {
+        padding-left: 0;
+        border-right: none;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-email a {
+        text-decoration: none;
+        color: #1aabac;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align:center;
+    }
+
+    .social-list{
+        padding-left: 5rem;
+    }
+}
