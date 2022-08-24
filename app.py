@@ -70,7 +70,8 @@ def sayhi():
 
         return render_template('sayhi.html',form=form)
 
-    except:
+    except Exception as e:
+        print(e)
         error = "OOPS! Some error occurred! Please try again after some time. Shivam is working on the issue."
         return render_template('error.html',error=error)
 
