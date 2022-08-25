@@ -64,9 +64,11 @@
 .journey-text p {
     color: #2e3755;
     font-weight: 400;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
-    max-width: 50rem;
+    max-width: 45rem;
+    font-family: "Proxima Nova", sans-serif;
 }
 
 #skills{
@@ -77,159 +79,35 @@
     padding: 5rem;
 }
 
-.about-me-container h2 {
-    color: #ec2e57;
-    font-size: 4rem;
-    font-family: "Proxima Nova", sans-serif;
-    margin-bottom: 1.5rem;
-    text-align: start;
-}
-
 .about-me-content {
     display: grid;
     grid-template-columns: 2fr 3fr;
     justify-content: center;
-
 }
 
-.about-me-text {
-    color: #2e3755;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.about-me-skills h3 {
-    color: #2e3755;
-    font-weight: bold;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.about-me-skills h2 {
+    color: #ec2e57;
+    font-size: 4rem;
     font-family: "Proxima Nova", sans-serif;
-    text-align: center;
+    margin-bottom: 1.5rem;
+    align-items: center;
 }
 
-#skills {
-    padding: 1rem;
-    color: whitesmoke;
-}
-
-#skills h3 {
-    font-size: 2rem;
-    text-align: center;
+.skills {
+    padding: 5rem;
 }
 
 .skill-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    /* border:1px solid red; */
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.skill-list h4 {
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 0.8rem;
-    color: #2e3755
-}
-
-.progress {
-    width: 60%;
-    height: 0.5rem;
-    background-color: #9cbab4;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-#SQL {
-    width: 75%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#python-lang {
-    width: 75%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#web-scrapping {
-    width: 70%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#data-analysis {
-    width: 70%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#data-viz {
-    width: 70%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#flask {
-    width: 60%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#git {
-    width: 60%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#Tableau {
-    width: 55%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#html {
-    width: 80%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#css {
-    width: 70%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#Bootstrap {
-    width: 75%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#stats {
-    width: 60%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#ml {
-    width: 65%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#dvc {
-    width: 70%;
-    height: 100%;
-    background-color: #009579;
-}
-
-#time-series {
-    width: 65%;
-    height: 100%;
-    background-color: #009579;
+.skill{
+    color:black;
+    font-family: "Proxima Nova", sans-serif;
+    line-height:2;
 }
 
 .education-and-experience {
@@ -245,6 +123,40 @@
     margin-bottom: 1rem;
     font-family: "Proxima Nova", sans-serif;
     text-align: center;
+}
+
+.college h4, .college p{
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+.high-school h4, .high-school p{
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+.school h4, .school p{
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+
+.experience h3{
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+
+.job-1 h4, .job-1 p{
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+
+.certifications h3 {
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
+}
+
+.certifications p{
+    margin: 1rem 0;
+    font-family: "Proxima Nova", sans-serif;
+    line-height:1.5;
 }
 
 .education {
@@ -263,12 +175,6 @@
 .experience-and-certifications div {
     margin: 1.5rem 0;
 }
-
-.certifications p {
-    margin: 1rem 0;
-}
-
-
 
 @media (max-width:1000px) {
 
