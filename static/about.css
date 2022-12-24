@@ -1,7 +1,7 @@
 @import url('static/base.css');
 
 
-#Introduction{
+#Introduction {
     background-color: #e6f3f1;
 }
 
@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 5rem;
-  
+
 }
 
 .intro-content {
@@ -43,12 +43,13 @@
     color: #ec2e57;
     font-size: 4rem;
     font-family: "Proxima Nova", sans-serif;
+    margin-top:1rem;
     margin-bottom: 1.5rem;
 }
 
 .journey-content {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
 .journey-photos {
@@ -61,6 +62,13 @@
     margin: 0 2rem 2rem 0;
 }
 
+.journey-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .journey-text p {
     color: #2e3755;
     font-weight: 400;
@@ -71,52 +79,97 @@
     font-family: "Proxima Nova", sans-serif;
 }
 
-#skills{
+#skills {
     background-color: #e6f3f1;
 }
 
-.about-me-container {
+.about-me-container-small-device {
     padding: 5rem;
+    display:none
 }
 
-.about-me-content {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    justify-content: center;
+.about-me-skills{
+    padding: 1rem 5rem 1.5rem 5rem;
 }
 
 .about-me-skills h2 {
     color: #ec2e57;
     font-size: 4rem;
     font-family: "Proxima Nova", sans-serif;
+    margin-top:1rem;
     margin-bottom: 1.5rem;
-    align-items: center;
+    margin-left:1rem;
 }
 
 .skills {
-    padding: 5rem;
+    padding: 3rem;
 }
 
-.skill-list {
+.skill-list-small-device {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
 
-.skill{
+.skill-small-device{
     color:black;
     font-family: "Proxima Nova", sans-serif;
     line-height:2;
+    list-style: none;
+} 
+
+.skill-list-large-device{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    gap:1rem;
+    padding:1rem;
+}
+
+.skill-large-device{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;
+    list-style:none;
+    padding:1rem;
+}
+
+.skill-large-device iconify-icon{
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.skill-large-device small{
+    margin-bottom: 0.5rem;
 }
 
 .education-and-experience {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    padding: 3rem;
 }
 
-.education-and-experience h3 {
+.education-and-experience h2{
+    color: #ec2e57;
+    font-size: 4rem;
+    font-family: "Proxima Nova", sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left:1.3rem;
+}
+
+.education-and-experience-smaller-container{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.education-and-experience-smaller-container h3 {
     color: #2e3755;
     font-weight: bold;
     line-height: 1.6;
@@ -125,38 +178,44 @@
     text-align: center;
 }
 
-.college h4, .college p{
+.college h4,
+.college p {
     font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
-}
-.high-school h4, .high-school p{
-    font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
-}
-.school h4, .school p{
-    font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
-.experience h3{
+.high-school h4,
+.high-school p {
     font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
-.job-1 h4, .job-1 p{
+.school h4,
+.school p {
     font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
+}
+
+.experience h3 {
+    font-family: "Proxima Nova", sans-serif;
+    line-height: 1.5;
+}
+
+.job-1 h4,
+.job-1 p {
+    font-family: "Proxima Nova", sans-serif;
+    line-height: 1.5;
 }
 
 .certifications h3 {
     font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
-.certifications p{
+.certifications p {
     margin: 1rem 0;
     font-family: "Proxima Nova", sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
 }
 
 .education {
@@ -176,10 +235,10 @@
     margin: 1.5rem 0;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1300px) {
 
     .intro-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .intro-content {
@@ -209,19 +268,33 @@
         justify-content: center;
         align-items: center;
         margin: 0;
+        padding: 0 0.5rem;
     }
 
     .journey-photos img {
         text-align: center;
     }
 
-    .journey-text p {
-        text-align: center;
+    /* .journey-text{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    .about-me-content {
-        display: flex;
+    .journey-text p {
+        text-align: center;
+    } */
+
+    .about-me-container-small-device {
+        padding: 5rem;
+        display:flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me-container-large-device{
+        display:none;
     }
 
     .education-and-experience {
@@ -229,11 +302,14 @@
         align-items: center;
     }
 
-    .experience-and-certifications{
-        border:none;
+    .education-and-experience-smaller-container{
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-
+    .experience-and-certifications {
+        border: none;
+    }
 
 
 }

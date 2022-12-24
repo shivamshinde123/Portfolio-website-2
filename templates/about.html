@@ -5,6 +5,10 @@
 {% block css_page_link %}
 
 <link rel="stylesheet" href="static/about.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 
 {% endblock %}
 
@@ -17,7 +21,7 @@
             <h1>Shivam Shinde</h1>
             <p>I'm aspiring data scientist who loves mathematics and programming.</p>
         </div>
-        <img src="static/shivam5.png" alt="img">
+        <img src="static/shivam.jpg" alt="img">
     </div>
 </section>
 
@@ -38,83 +42,157 @@
                     data analysis skills as I learned python, data analysis, statistics and many more topics in later
                     days.</p>
                 <p>I also stumbled across the field of website development. So out of curiosity, I am learning web
-                    development also. You could say I have created this website while learning web development only.</p>
+                    development also. I have created this website as a project to hone my website develpment skills.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section id="skills">
-    <div class="about-me-container">
-        <!-- <h2>About me</h2> -->
-        <div class="about-me-content">
-            <!-- <div class="about-me-text">
-                <h3>Who am I?</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt cum rerum deleniti amet, alias
-                    enim magnam totam commodi voluptatum impedit autem nostrum sequi aut minus nisi reiciendis natus
-                    itaque!
-                    Aliquam, commodi. Laudantium, minima dicta repudiandae autem officia sunt eos fuga ipsam expedita
-                    architecto, aspernatur ullam delectus nam voluptates eligendi!</p>
-            </div> -->
-            <div class="about-me-skills">
-                <h2>Skills & Expertise</h2>
-                <div class="skills">
-                    <ul class="skill-list">
-                        <li class="skill">SQL</li>
-                        <li class="skill">Python programming language</li>
-                        <li class="skill">web scrapping</li>
-                        <li class="skill">Data analysis using python NumPy and pandas</li>
-                        <li class="skill">Data Visualization using matplotlib and seaborn</li>
-                        <li class="skill">Flask python web development framework</li>
-                        <li class="skill">Git</li>
-                        <li class="skill">Data version control using DVC</li>
-                        <li class="skill">Tableau</li>
-                        <li class="skill">HTML</li>
-                        <li class="skill">CSS</li>
-                        <li class="skill">JavaScript programming language</li>
-                        <li class="skill">Machine Learning</li>
-                        <li class="skill">Time series analysis</li>
-                        <li class="skill">Bootstrap</li>
-                        <li class="skill">Statistics</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="about-me-container-small-device">
+        <div class="about-me-skills">
+            <h2>Skills</h2>
+            <ul class="skill-list-small-device">
+                <li class="skill-small-device">PostgreSQL</li>
+                <li class="skill-small-device">Python</li>
+                <li class="skill-small-device">web scrapping</li>
+                <li class="skill-small-device">Numpy</li>
+                <li class="skill-small-device">Pandas</li>
+                <li class="skill-small-device">Matplotlib</li>
+                <li class="skill-small-device">Seaborn</li>
+                <li class="skill-small-device">Tableau</li>
+                <li class="skill-small-device">PowerBI</li>
+                <li class="skill-small-device">Git</li>
+                <li class="skill-small-device">DVC</li>
+                <li class="skill-small-device">Statistics</li>
+                <li class="skill-small-device">Machine Learning</li>
+                <li class="skill-small-device">Deep Learning</li>
+                <li class="skill-small-device">Time series analysis</li>
+                <li class="skill-small-device">HTML</li>
+                <li class="skill-small-device">CSS</li>
+                <li class="skill-small-device">Flask</li>
+            </ul>
+        </div>
+    </div>
+    <div class="about-me-container-large-device">
+        <div class="about-me-skills">
+            <h2>Skills</h2>
+            <ul class="skill-list-large-device">
+                <li class="skill-large-device">
+                    <iconify-icon icon="akar-icons:postgresql-fill" width="75" height="75"></iconify-icon>
+                    <small><strong>PostgreSQL</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="akar-icons:python-fill" width="75" height="75"></iconify-icon>
+                    <small><strong>Python</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:selenium" width="75" height="75"></iconify-icon>
+                    <small><strong>Web Scrapping</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:numpy" width="75" height="75"></iconify-icon>
+                    <small><strong>NumPy</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:pandas" width="75" height="75"></iconify-icon>
+                    <small><strong>Pandas</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="logos:matplotlib-icon" width="75" height="75"></iconify-icon>
+                    <small><strong>Matplotlib</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="logos:seaborn-icon" width="75" height="75"></iconify-icon>
+                    <small><strong>Seaborn</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:tableau" width="75" height="75"></iconify-icon>
+                    <small><strong>Tableau</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:powerbi" width="75" height="75"></iconify-icon>
+                    <small><strong>PowerBI</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="mdi:git" width="75" height="75"></iconify-icon>
+                    <small><strong>Git</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:dvc" width="75" height="75"></iconify-icon>
+                    <small><strong>DVC</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="wpf:statistics" width="75" height="75"></iconify-icon>
+                    <small><strong>Statistics</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="eos-icons:machine-learning" width="75" height="75"></iconify-icon>
+                    <small><strong>Machine Learning</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="fluent-mdl2:machine-learning" width="75" height="75"></iconify-icon>
+                    <small><strong>Deep Learning</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="codicon:graph-line" width="75" height="75"></iconify-icon>
+                    <small><strong>Time Series Analysis</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="uil:html5" width="75" height="75"></iconify-icon>
+                    <small><strong>HTML</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="ci:css3" width="75" height="75"></iconify-icon>
+                    <small><strong>CSS</strong></small>
+                </li>
+                <li class="skill-large-device">
+                    <iconify-icon icon="simple-icons:flask" width="75" height="75"></iconify-icon>
+                    <small><strong>Flask</strong></small>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section class="education-and-experience">
-    <div class="education">
-        <h3>Education</h3>
-        <div class="college">
-            <h4>Mechanical Engineering</h4>
-            <p>Sardar Patel College of Engineering, Mumbai / 2017-2021</p>
-        </div>
-        <div class="high-school">
-            <h4>Science Stream</h4>
-            <p>Dayanand Science College, Latur / 2015-2017</p>
-        </div>
-        <div class="school">
-            <h4>School</h4>
-            <p>Keshavraj School, Latur / 2005-2015</p>
-        </div>
-    </div>
-    <div class="experience-and-certifications">
-        <div class="experience">
-            <h3>Experience</h3>
-            <div class="job-1">
-                <h4>Infosys Ltd.</h4>
-                <p>System Engineer / 2021 - present</p>
+    <h2>Education and Experience</h2>
+    <div class="education-and-experience-smaller-container">
+        <div class="education">
+            <h3>Education</h3>
+            <div class="college">
+                <h4>Mechanical Engineering</h4>
+                <p>Sardar Patel College of Engineering, Mumbai / 2017-2021</p>
+            </div>
+            <div class="high-school">
+                <h4>Science Stream</h4>
+                <p>Dayanand Science College, Latur / 2015-2017</p>
+            </div>
+            <div class="school">
+                <h4>School</h4>
+                <p>Keshavraj School, Latur / 2005-2015</p>
             </div>
         </div>
-        <div class="certifications">
-            <h3>Certifications</h3>
-            <p>Microsoft Certified: Azure Fundamentals</p>
-            <p>Python programming language - udemy</p>
-            <p>Python flask framework - udemy</p>
-            <p>PostgreSQL - udemy </p>
-            <p>Tableau - iNeuron</p>
-            <p>Microsoft Excel - udemy</p>
+        <div class="experience-and-certifications">
+            <div class="experience">
+                <h3>Experience</h3>
+                <div class="job-1">
+                    <h4>Infosys Ltd.</h4>
+                    <p>System Engineer / August 2021 - Present</p>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <p>Microsoft Certified: Azure Fundamentals</p>
+                <p>Python programming language - Udemy</p>
+                <p>Python flask framework - Udemy</p>
+                <p>PostgreSQL - Udemy </p>
+                <p>Tableau - iNeuron</p>
+                <p>Microsoft Excel - Udemy</p>
+                <p>Convolutional Neural Networks - DeepLearning.ai</p>
+                <p>Machine Learning and Deep Learning - iNeuron.ai</p>
+                <p>Git - iNeuron.ai</p>
+            </div>
         </div>
     </div>
 </section>

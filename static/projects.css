@@ -14,7 +14,7 @@ p,h3{
 
 }
 
-.Tableau-container, .web-dev-container, .jupyter-snippets-container{
+.ML-container, .web-dev-container, .jupyter-snippets-container{
     background-color: #e6f3f1;
 }
 
@@ -77,4 +77,17 @@ p,h3{
 
 .card-content button:hover{
     border:1px solid black;
+}
+
+@media (max-width:1300px){
+
+    .card{
+        margin:1rem;
+    }
+
+    .h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding:0;
+    }
 }
