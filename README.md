@@ -7,4 +7,4 @@
 ![](https://img.shields.io/github/license/shivamshinde123/Portfolio-website-2)
 
 <p>This repo contains the code for my portfolio website.</p>
-The website is hosted at http://shivamdshinde.com/ . Feel free to check it out.
+
