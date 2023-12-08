@@ -6,5 +6,5 @@
 ![](https://img.shields.io/github/directory-file-count/shivamshinde123/Portfolio-website-2)
 ![](https://img.shields.io/github/license/shivamshinde123/Portfolio-website-2)
 
-<p>This repo contains the code for my portfolio website.</p>
+
 
