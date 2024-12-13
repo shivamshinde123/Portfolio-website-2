@@ -6,5 +6,25 @@
 ![](https://img.shields.io/github/directory-file-count/shivamshinde123/Portfolio-website-2)
 ![](https://img.shields.io/github/license/shivamshinde123/Portfolio-website-2)
 
+# Website Screenshots
+### Home Screen
+![](Screenshots/HomeScreen.png)
+
+### About Me
+![](Screenshots/AboutMe.png)
+
+### Skills
+![](Screenshots/Skills.png)
+
+### Blogs
+![](Screenshots/Blogs.png)
+
+### Projects
+![](Screenshots/ProjectScreen.png)
+![](Screenshots/ProjectScreen2.png)
+
+## Say Hi
+![](Screenshots/SayHi.png)
+
 
 
